@@ -1,0 +1,15 @@
+# Configuration for Cog ⚙️
+# Reference: https://cog.run/yaml
+
+build:
+  gpu: false
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_version: "3.11"
+  python_packages:
+    - "Pillow==10.0.1"
+    - "numpy==1.24.3"
+
+# predict.py defines how predictions are run on your model
+predict: "predict.py:Predictor"
